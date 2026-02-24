@@ -12,9 +12,7 @@ void display(int arr[], int n)
 int main()
 {
     int arr[] = {3, 5, 17, 9, 10};
-    int n=sizeof(arr)/sizeof(arr[0]);
-    
-    // 1. Display
+    int n=sizeof(arr)/sizeof(arr[0]);
     display(arr, n);
     return 0;
 }
