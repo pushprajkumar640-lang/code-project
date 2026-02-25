@@ -3,7 +3,7 @@ int fact1(int n)
 {
     int ans=1;
     for(int i=2;i<=n;i++){
-        ans=ans*1;
+        ans=ans*i;
     }
     return ans;
 }
