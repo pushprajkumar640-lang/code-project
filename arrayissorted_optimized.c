@@ -8,7 +8,7 @@ void display(int arr[], int n)
     }
     printf("\n");
 }
-int isSorted_optimized(int arr[], int n) // O(n)
+int isSorted_optimized(int arr[], int n) 
 {
     for (int i = 1; i < n; i++)
     {
