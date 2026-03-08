@@ -1,0 +1,55 @@
+#include <stdio.h>
+#include <stdlib.h>
+#define MS 5
+typedef struct stack
+{
+    int top;
+    int arr[MS];
+    int size;
+} stack;
+void create(stack *s)
+{
+    s->size = 0;
+    s->top = -1;
+}
+void push(stack *s, int x)
+{
+    if (s->top == MS - 1)
+    {
+        printf("Stack Overflow!!\n");
+        return;
+    }
+    s->size++;
+    s->arr[++s->top] = x;
+}
+void display(stack *s)
+{
+    for(int i = 0; i <= s->top; i++)
+    {
+        printf("%d ", s->arr[i]);
+    }
+    printf("\n");
+}
+int main()
+{
+    stack s;
+    create(&s);
+
+    push(&s,5);
+    display(&s);
+
+    push(&s,8);
+    display(&s);
+
+    push(&s,3);
+    display(&s);
+
+    push(&s,9);
+    display(&s);
+
+    push(&s,2);
+    display(&s);
+
+    push(&s,4);
+
+}
